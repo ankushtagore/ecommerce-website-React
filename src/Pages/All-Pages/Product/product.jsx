@@ -1,7 +1,11 @@
 import React from 'react'
 import Slider from '@material-ui/core/Slider';
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import './product.css';
 
 function product() {
     const [value, setValue] = React.useState(30);
@@ -11,45 +15,45 @@ function product() {
     }
         return (
             <div>
-                <div className="left-side">
-                    <h1>jIgkljDdq4RYDnJyQsiWbdvGeei
+<div className="row mt-5 p-5">
+                <div className="col-6" >
 
+                    <img src="https://i.ibb.co/6D2nn9d/Rectangle-78.png"  alt="" />
 
-                        dg
-                        dfFmQrSA8YenEcgUFhdfg
-                        dg
-                        dg
-                        sdkReadysdgs
-                        sd
-                        sdksdkReads
-                        sd
-                        sd
-                        sd
-                    </h1>
-                    <img src="https://i.ibb.co/fpkR24R/Rectangle-115.png" alt="" />
-                    <button>Add to Bag</button>
-                    <button>Buy Now</button>
+              
                 </div>
-                <div className="right-side">
-                    <h1>Silk Saree</h1>
-                    <h2>Rupee 2,599.00</h2>
-                    <h4>onwards</h4>
+                <div className="col-6 text-center">
 
-                    <h2>Customise Your Design</h2>
+                    <h1>Gorgeous Designer Saree</h1>
+                    <p>Sold by Nikita Singh</p>
+
+                    <p className="price">₹ 2,599.00</p>
+                    <p>onwards</p>
+                    <p className="price">Customise Your Design</p>
                     <button>Colors</button>
                     <button>Neck</button>
                     <button>Sleeves</button>
                     <button>Length</button>
                     <button>Fabric</button>
-
                     <h2>Select Size</h2>
              <div>
-             <buttom>XS</buttom>
-                    <buttom>S</buttom>
-                    <buttom>M</buttom>
-                    <buttom>L</buttom>
-                    <buttom>XL</buttom>
-                    <buttom>XXL</buttom>
+             <Paper>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        indicatorColor="primary"
+        textColor="primary"
+        centered
+      >
+        <Tab label="XS" />
+        <Tab label="S" />
+        <Tab label="M" />
+        <Tab label="L" />
+        <Tab label="XL" />
+        <Tab label="XXL" />
+      </Tabs>
+    </Paper>
+
                     <Grid item xs>
                         <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
                     </Grid>
@@ -70,9 +74,6 @@ function product() {
              </div>
 
                     <button>Size Chart</button>
-
-
-
                     <h3>Specifications</h3>
                     <p>Classical Silk Saree</p>
 
@@ -82,7 +83,11 @@ function product() {
                     <input type="text" placeholder="Enter Pincode" />
                     <button>Check Availability</button>
                 </div>
-                <div className="lower-sec">
+                </div>
+
+                <div className="row-6 ">
+                <button>Add to Bag</button>
+                    <button>Buy Now</button>
                     <h3>Reviews and Ratings *4.7/5</h3>
                     <p>star</p>
                     <p>loved it!</p>

@@ -29,7 +29,7 @@ function Header({ currentUser, hidden }) {
       </MenuContainer>
       <LogoContainer to="/">
 
-      <img src="https://i.ibb.co/16Cnqk7/UPDATED-Modavastraa-logo-2.png" alt=""/>
+      <img src="https://i.ibb.co/16Cnqk7/UPDATED-Modavastraa-logo-2.png" style={{width:80, paddingTop:20}} alt=""/>
       </LogoContainer>
       <OptionsContainer>
         <OptionLink to="/shop">

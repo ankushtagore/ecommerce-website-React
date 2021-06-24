@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 export const HeaderContainer = styled.div`
     height: 70px;
+    top: 0px !important;
+
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -13,16 +15,16 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
     height: 4%;
-    width: 30px;
-    padding: 0px;
+    width: 300px;
     &:hover {
         transform: scale(1.1);
         transition: transform 200ms;
 `
 export const MenuContainer = styled(Link)`
     height: 4%;
-    width: 3px;
-    padding: 15px;
+    width: 30px;
+    padding-top: 18px;
+
     &:hover {
         transform: scale(1.1);
         transition: transform 200ms;
