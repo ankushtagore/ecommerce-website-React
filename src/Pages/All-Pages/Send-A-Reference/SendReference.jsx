@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+
 
 class SendReference extends Component {
   constructor(props) {
@@ -22,23 +25,56 @@ class SendReference extends Component {
   render() {
     return (
       <div>
-        <div>
-          <div>
-              <p>Have a particular design stuck in your head?</p>
-              <p>We've got you covered!</p>
-            <img src={this.state.image} />
-            <h1>Select Image</h1>
-            <input type="file" name="myImage" placeholder="Upload Image" onChange={this.onImageChange} />
+        <div className="row " style={{marginLeft:"50px", marginTop:"50px"}}>
+          <div className='col-4' >
+            <img src={this.state.image} style={{ width: '504px', height: '504px' }}/>
+            <h2>Select Image</h2>
+            <div class="con" >
+              <input type="file" src="https://i.ibb.co/R3FGkzw/Rectangle-74.png" name="myImage" placeholder="Upload Image" onChange={this.onImageChange} />
+            </div>
           </div>
-          <div>
-            <h3>Tell us a bit more about it</h3>
-            <input type="text" placeholder="Share what you like about the design, what you like don't like" />
-            <button>SEND A REFERENCE</button>
 
+          <div className='col-5'>
+            <form className="row" noValidate autoComplete="off">
+              <TextField id="filled-basic" label="A Suitable Title*" variant="filled" />
+              <TextField id="filled-basic" label="Description*" variant="filled" />
+              <TextField id="filled-basic" label="Set a Price" variant="filled" />
+            </form>
+            <div className="row w-100 p-3">
+              <Button variant="contained" color="secondary" size='large' > BOOK APPOINTMENT</Button>
+            </div>
+
+            </div>
           </div>
         </div>
-      </div>
-    );
+        );
   }
 }
-export default SendReference;
+        export default SendReference;
+
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import { Formik, Field, Form } from "formik";
+// import "./styles.css";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Contact Us</h1>
+//       <Formik
+//         initialValues={{ name: "", email: "" }}
+//         onSubmit={async values => {
+//           await new Promise(resolve => setTimeout(resolve, 500));
+//           alert(JSON.stringify(values, null, 2));
+//         }}
+//       >
+//         <Form>
+//           <Field name="name" type="text" />
+//           <Field name="email" type="email" />
+//           <button type="submit">Submit</button>
+//         </Form>
+//       </Formik>
+//     </div>
+//   );
+// }

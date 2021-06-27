@@ -27,7 +27,8 @@ import Product from "./Pages/All-Pages/Product/product"
 import SendReference from "./Pages/All-Pages/Send-A-Reference/SendReference"
 import ThriftStore from "./Pages/All-Pages/Thrift-Store/thriftStore"
 import MakeupOptions from "./Pages/All-Pages/Makeup-Hair/makeupOptions";
-
+import Appointment from "./Pages/All-Pages/Makeup-Hair/Appointment";
+import ThriftConfirmation from "./Pages/All-Pages/Send-A-Reference/ThriftConfirmation";
 
 
 
@@ -77,12 +78,10 @@ class App extends Component {
           <Route path="/product" component={Product} />
           <Route path="/thriftstore" component={ThriftStore} />
           <Route path="/makeupoptions" component={MakeupOptions} />
-
+          <Route path="/appointment" component={Appointment } />
+          <Route path="/thriftconfirmation" component={ThriftConfirmation} />
           <Route path="/sendref" component={SendReference} />
-
-
           
-
 
           <Route
             path="/signin"

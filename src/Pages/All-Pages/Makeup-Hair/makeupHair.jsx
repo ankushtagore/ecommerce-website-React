@@ -6,7 +6,7 @@ import {
 
 function MakeupHair() {
     return (
-      <MakeupHairContainer>
+      <div className="col">
       <OptionLink to="shop/hats">
           <img src="https://i.ibb.co/khRVrBf/Rectangle-74-6.png" alt="" />
       </OptionLink>
@@ -16,7 +16,7 @@ function MakeupHair() {
       <OptionLink to="shop/hats">
           <img src="https://i.ibb.co/Xk0GNvp/Rectangle-74-5.png" alt="" />
       </OptionLink>
-      </MakeupHairContainer>
+      </div>
     )
 }
 

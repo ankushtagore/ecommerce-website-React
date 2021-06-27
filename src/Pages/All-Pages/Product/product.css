@@ -4,6 +4,20 @@ h1{
 
 }
 
+h2{
+    font-family: 'GFS Didot', serif;
+    font-size: 46px !important;
+    
+}
+
+h3{
+    font-family: 'GFS Didot', serif;
+    font-size: 36px !important;
+
+
+    
+}
+
 .price{
     font-size: 46px !important;
     font-family: 'Lato', sans-serif;
